@@ -18,9 +18,8 @@ export default class Smoothie {
           <h4>Price: ${this.price}</h4>
           <ul>`
     template += this.drawIngrediants(index)
-    template += `  
-           </ul>
-        <form onsubmit="app.controllers.smoothieController.addIngrediants(event, ${index})">
+    template += `    </ul>
+        <form onsubmit="app.controllers.smoothieController.addIngrediant(event, ${index})">
           <div class="form-group">
             <label for="ingrediant">ingrediant</label>
             <input type="text" class="form-control" name="ingrediant" placeholder="smoothie ingrediant" required>

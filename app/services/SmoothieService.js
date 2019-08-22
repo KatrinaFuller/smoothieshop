@@ -8,15 +8,14 @@ let _state = {
     size: "Medium",
     price: 5,
     ingrediants: ["peanut butter", "banana", "chocolate"],
-    // imgUrl: "https://www.pumpkinnspice.com/wp-content/uploads/2015/11/chocolate-peanut-butter-cup-smoothie1.jpg"
   })]
 }
 
 
 // Public
 export default class SmoothieService {
-  deleteIngrediant(smothieIndex, ingrediantIndex) {
-    _state.smoothies[smothieIndex].ingrediants.splice(ingrediantIndex, 1)
+  deleteIngrediant(smoothieIndex, ingrediantIndex) {
+    _state.smoothies[smoothieIndex].ingrediants.splice(ingrediantIndex, 1)
     this.saveSmoothies()
   }
 

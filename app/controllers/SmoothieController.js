@@ -33,7 +33,7 @@ export default class SmoothieController {
     _draw()
   }
 
-  addTopping(event, smoothieIndex) {
+  addIngrediant(event, smoothieIndex) {
     event.preventDefault()
     let form = event.target
     let newIngrediant = form.ingrediant.value
