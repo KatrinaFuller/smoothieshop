@@ -18,4 +18,8 @@ export default class SmoothieService {
   constructor() {
     console.log("Hello from Smoothie Service")
   }
+
+  get Smoothie() {
+    return _state.smoothies.map(smoothie => new Smoothie(smoothie))
+  }
 }
