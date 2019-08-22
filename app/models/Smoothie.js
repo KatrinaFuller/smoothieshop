@@ -4,7 +4,7 @@ export default class Smoothie {
   constructor(data) {
     this.name = data.name
     this.size = data.size || null
-    this.price = data.price || null
+    this.price = data.price || "$5"
     this.ingrediants = data.ingrediants || []
     // this.imgUrl = data.imgUrl
   }
@@ -12,7 +12,7 @@ export default class Smoothie {
   getTemplate(index) {
     let template =
       `
-      <div class="col-4">
+      <div class="col-sm-4 border">
           <h1>${this.name}</h1>
           <h4>Size: ${this.size}</h4>
           <h4>Price: ${this.price}</h4>
